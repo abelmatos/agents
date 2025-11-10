@@ -11,14 +11,6 @@
 *.key
 *credentials*.json
 
-# Output directories
-reviews/*.md
-test-reports/*.md
-context/summaries/*.md
-!reviews/.gitkeep
-!test-reports/.gitkeep
-!context/summaries/.gitkeep
-
 # Logs
 *.log
 logs/
