@@ -1,0 +1,79 @@
+# AI Agents .gitignore
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# API Keys (never commit these!)
+*api-key*
+*api_key*
+*.key
+*credentials*.json
+
+# Output directories
+reviews/*.md
+test-reports/*.md
+context/summaries/*.md
+!reviews/.gitkeep
+!test-reports/.gitkeep
+!context/summaries/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.backup
+*.bak
+
+# Claude Code specific
+.claude/.cache/
+.claude/temp/
+
+# Python (if using Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# Node (if using Node scripts)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+
+# Build artifacts
+build/
+target/
+dist/
+*.class
+*.jar
+*.war
+
+# Keep empty directories
+!.gitkeep
