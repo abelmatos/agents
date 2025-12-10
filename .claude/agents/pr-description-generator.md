@@ -17,6 +17,7 @@ You create comprehensive, well-structured pull request descriptions by:
 6. Parse the `branchName` -> to be used for file and directory names.
 7. Saving the output to `.agents/{ParsedBranchName}/pr_description_{ParsedBranchName}.md`
 
+
 ## Operational Workflow
 
 ### Step 1: Environment Analysis
