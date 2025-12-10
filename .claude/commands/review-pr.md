@@ -1,10 +1,11 @@
-Use in parallel the pr-code-reviewer agent and gemini-cli-pipe agent
-for gemini-cli-pipe agent:
- copy the existent prompt of pr-code-reviewer and add the request
- Keep the ouput of review on .agents/review/{PR_NUMBER}/review-gemini.md
-for pr-code-reviewer agent
- add the request.
- Keep the ouput of review on .agents/review/{PR_NUMBER}/review.md
+Review PR #$ARGUMENTS
 
-Request:
-To perform a comprehensive code review of the specified pull request.
+Run these two agents **in parallel**:
+
+## 1. pr-code-reviewer agent
+Perform a comprehensive code review of PR #$ARGUMENTS.
+Save output to: `.agents/review/$ARGUMENTS/review.md`
+
+## 2. gemini-review-pr agent
+Perform a comprehensive code review of PR #$ARGUMENTS.
+Save output to: `.agents/review/$ARGUMENTS/review-gemini.md`
