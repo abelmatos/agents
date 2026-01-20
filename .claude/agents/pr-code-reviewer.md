@@ -5,4 +5,4 @@ model: sonnet
 tools: Bash, Read, Grep, Glob
 ---
 
-Read from `~/.claude/shared/review-promp.md`.
+Read from `~/.claude/shared/review-prompt.md`.

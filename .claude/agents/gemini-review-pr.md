@@ -17,7 +17,7 @@ Extract the task description to Gemini and replace the on the bash script {task 
 ```bash
 mkdir -p .claude
 cp -r ~/.claude/shared .claude/
-gemini " Step 1 - Please read this as base .claude/shared/review-promp.md. Step 2 do the request - {task description}" 
+gemini " Step 1 - Please read this as base .claude/shared/review-prompt.md. Step 2 do the request - {task description}" 
 ```
 
 ### Step 3: Return Results

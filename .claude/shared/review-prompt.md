@@ -44,7 +44,7 @@ For each identified issue, create a targeted comment following these guidelines:
 
 **Review Criteria, Severity Levels, and Quality Rules**:
 
-Read and apply the shared review criteria from `~/.claude/shared/review-criteria.md`. This includes:
+Read and apply the shared review criteria from `.claude/shared/review-criteria.md`. This includes:
 - Review criteria (Correctness, Security, Efficiency, Maintainability, Testing, Error Handling)
 - Severity levels (🔴 Critical, 🟠 High, 🟡 Medium, 🟢 Low)
 - Severity assignment guidelines
