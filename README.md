@@ -59,12 +59,20 @@ Runs both Claude and Gemini PR reviews **in parallel**, saving outputs to:
 - `.agents/review/{pr-number}/review.md` (Claude)
 - `.agents/review/{pr-number}/review-gemini.md` (Gemini)
 
+### `/git-branch-commit-pr <task>`
+Complete git workflow automation:
+1. Fetches remotes and creates a branch from `origin/main`
+2. Uses branch naming convention: `<type>/LM-XXXX-<description>`
+3. Executes the requested task
+4. Commits with conventional commit format
+5. Pushes and creates a draft PR
+
 ## Shared Resources
 
 | File | Description |
 |------|-------------|
 | `review-criteria.md` | Standard review criteria, severity levels (🔴🟠🟡🟢), and output format |
-| `review-promp.md` | Base prompt for PR review agents with execution workflow |
+| `review-prompt.md` | Base prompt for PR review agents with execution workflow |
 
 ## Usage
 
